@@ -1,0 +1,138 @@
+body{
+   margin:0;
+}
+
+#estruturaGrid {
+    display: grid;
+    grid-template-areas: 'header header'
+                         'nav nav'
+                         'arte arte'
+                         'girar girar'
+                         "banda aside"
+                         "banda aside "
+                         "agenda agenda "
+                         "galeria galeria "
+                         'footer footer';
+    grid-auto-rows: 10vh 8vh 112vh 100vh 50vh 50vh 90vh 90vh 20vh;
+}
+
+header{
+    grid-area: header;
+    background-color: black;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bloco{
+    width: 17%;
+}
+
+.AboBranco {
+    width: 20%;
+    height: 20%;
+    padding: 23px;
+}
+
+nav{
+    grid-area: nav;
+    background-color:black;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 25px;
+}
+
+nav div{
+    display:none;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+}
+
+#menu{
+    display:none;
+}
+
+.redes {
+    justify-content: left;
+}
+
+.redes > img {
+    width: 10%;
+    height: 10%;
+    margin: 2vh;
+}
+.arte {
+    grid-area: arte;
+    background-image: url("/static/imagens/ArtEPsite.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+}
+.girar{
+    grid-area: girar;
+    background-color:pink;
+}
+
+.banda {
+    grid-area: banda;
+    background-color: black;
+    display: flex;
+}
+
+.banda > img {
+    width: 50vw;
+    height: 50vh;
+}
+
+aside {
+    grid-area: aside;
+    background-color: blue;
+    display: flex;
+}
+
+.agenda {
+    grid-area: agenda;
+    background-color: brown;
+}
+
+.galeria {
+    grid-area: galeria;
+    background-color: aqua;
+}
+
+footer{
+    grid-area:footer;
+    background-color:orange;
+}
+
+
+@media(max-width:768px){
+    nav a{
+        display:none;
+    }
+    #redes{
+        display: flex;
+        justify-content: space-around;
+        width: 60vw;
+    }
+    #redes img{
+        width: 20px;
+        height: 20px;
+    }
+    #menu{
+        display: flex;
+        margin-left: 20vw;
+        width: 25px;
+        height: 25px;
+    }
+    .redes{
+        display:none;
+    }
+
+}

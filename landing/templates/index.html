@@ -1,23 +1,27 @@
-{% load static  %}
+{% load staticfiles  %}
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link defer rel="stylesheet" href="{% static 'CSS/style.css' %}">
     <title>Aborigens</title>
 </head>
 <body>
-    <div id="main">
+    <div id="estruturaGrid">
         <header>
-            <img src="static/abo.png" alt="" id="logo">
-            <img src="static/menu.png" alt="" id="menu">
-            <div class="redes">
-            <img src="static/deezer.png" alt="">
-            <img src="static/youtu.png" alt="">
-            <img src="static/insta.png" alt="">
-            <img src="static/face.png" alt="">
+            <div>
+                <div class="bloco"></div>
+                <img class="AboBranco" src="{% static 'imagens/AboDefaut.png' %}" alt="" id="logo">
+                <img src="{% static 'imagens/menu.png' %}" alt="" id="menu">
+                <div class="redes">
+                <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
+                <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
+                <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
+                <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
+                </div>
             </div>
         </header>
         <nav>
@@ -28,18 +32,33 @@
             <a href="#">CONTATO PARA SHOW</a>
 
             <div id="redes">
-             <img src="static/deezer.png" alt="">
-             <img src="static/youtu.png" alt="">
-             <img src="static/insta.png" alt="">
-             <img src="static/face.png" alt="">
+             <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
+             <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
+             <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
+             <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
             </div>
         </nav>
-        <section>
-            SECTION
+        <section class="arte">
+        Arte do Ep 
         </section>
-        <div id="divgrid">div</div>
+        <section class="girar"> 
+        Girar
+        </section>
+        <section class = "banda"> 
+        <img src= "{% static 'imagens/AboBranco.png' %}" alt="">
+             </section>
+             <aside> 
+                <p> texto </p>
+             </aside>
+        <section class= "agenda"> 
+            <h1> Agenda da banda</h1>
+        </section>
+        <section class="galeria">
+         Carrocel de imagens 
+        </section>
         <footer>footer</footer>
     </div>
 
 </body>
 </html>
+
