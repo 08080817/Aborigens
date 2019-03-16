@@ -113,6 +113,14 @@ footer{
 
 
 @media(max-width:768px){
+    /* ----- HEADER ------- */
+    #menu{
+        display: flex;
+        margin-right:10vh;
+        width: 25px;
+        height: 25px;
+    }
+    /* ------- NAV -------- */
     nav a{
         display:none;
     }
@@ -124,15 +132,78 @@ footer{
     #redes img{
         width: 20px;
         height: 20px;
-    }
-    #menu{
-        display: flex;
-        margin-left: 20vw;
-        width: 25px;
-        height: 25px;
+        margin-top: -5px;
     }
     .redes{
         display:none;
     }
 
+}
+
+@media(min-width:300px){
+     /* ----- HEADER ------- */
+    #menu{
+        height: 3vh;
+        width: 5vw;
+    }
+    .AboBranco{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media(min-width:650px){
+    /* ----- HEADER ------- */
+    .AboBranco{
+        margin-top:-2px;
+    }
+}
+@media(min-width:666px){
+    /* ----- HEADER ------- */
+    .AboBranco{
+        margin-top:-3px;
+}
+@media(min-width:712px){
+    /* ----- HEADER ------- */
+    .AboBranco{
+        margin-top:-5px;
+    }
+    /* ----- NAV -----*/
+    #redes img{
+        width: 25px;
+        height: 25px;
+        margin-top: -8px;
+    }
+}
+@media(min-width:780px){
+    /* ----- HEADER -----*/
+    .AboBranco{
+        margin-top: -12px;
+    }
+    /* ----- NAV -----*/
+    nav a{
+        margin-top:-5px;
+    }
+}
+@media(min-width:852px){
+    /* ----- HEADER -----*/
+    .AboBranco{
+        height: 8vh;
+        margin-top: -12px;
+    }
+    /* ----- NAV -----*/
+    nav a{
+        margin-top:-7px;
+    }
+}
+@media(min-width:910px){
+    /* ----- HEADER -----*/
+    .AboBranco{
+        object-fit: contain;
+        height: 8vh;
+        margin-top: -12px;
+    }
+    /* ----- NAV -----*/
+    nav a{
+        margin-top:-7px;
+    }
 }
