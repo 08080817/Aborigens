@@ -1,24 +1,91 @@
+{% load staticfiles  %}
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
+    <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <title>Contato Para Show</title>
 </head>
-<body style="background-color: blueviolet">
-<div>
-    <input type="text" placeholder="Nome" >
-    <input type="text" placeholder="Sobrenome">
-    <input type="email" name="" id="" placeholder="E-mail">
-    <input type="text" placeholder="País">
-    <input type="text" placeholder="Telefone">
-    <input type="text" placeholder="Celular">
-    <input type="url" name="" id="" placeholder="Site">
 
-    <input type="text" placeholder="Mensagem">
-    <button></button>
-</div>
-
+<body style="background-color: blueviolet" class="headerOn">
+    <!-------- HEADER GERAL COPIAR AQUI  ------->
+    <input type="checkbox" name="menu" id="menuToggle">
+    <header>
+        <div>
+            <div class="bloco"></div>
+            <img class="AboBranco" src="{% static 'imagens/AboDefaut.png' %}" alt="">
+            <label for="menuToggle">
+                <span>
+                    <img src="{% static 'imagens/menu.png' %}" alt="" id="menu">
+                </span>
+            </label>
+            <div class="redes">
+                <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
+                <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
+                <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
+                <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="links">
+            <label for="menuToggle">
+                <span>
+                    <i class="fas fa-times"></i>
+                </span>
+            </label>
+            <a href="#">INICIO</a>
+            <a href="#">BANDA</a>
+            <a href="#">AGENDA</a>
+            <a href="">GALERIA</a>
+            <a href="{% url 'contact' %}">CONTATO PARA SHOW</a>
+        </div>
+    
+        <div id="redes">
+            <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
+            <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
+            <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
+            <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
+        </div>
+    </nav> 
+    <!-------- HEADER GERAL TERMINAR AQUI  ------->
+    <div class="container">
+        <form action="">
+            <span class="campo">
+                Nome: 
+                <input type="text" name="nome" >
+            </span>
+            <span class="campo">
+                Sobrenome: 
+                <input type="text" >
+            </span>
+            <span class="campo">
+                E-mail: 
+                <input type="text" >
+            </span>
+            <span class="campoDuplo">
+                <div>
+                    Telefone: 
+                    <input type="number" >
+                </div>
+                <div>
+                    Celular: 
+                    <input type="number" >
+                </div>
+            </span>
+            <span class="campo">
+                Escreva uma mensagem :)
+                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+            </span>
+            <input type="submit" value="ENVIAR">
+        </form>
+    </div>
 </body>
 </html>

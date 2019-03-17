@@ -13,9 +13,25 @@ body{
                          "agenda agenda "
                          "galeria galeria "
                          'footer footer';
-    grid-auto-rows: 10vh 8vh 112vh 100vh 50vh 50vh 90vh 90vh 20vh;
+    grid-auto-rows: 10vh 8vh auto 100vh 50vh 50vh 90vh 90vh 20vh;
 }
-
+input#menuToggle{
+    display: none;
+}
+.headerOn nav .links{
+    display: block;
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 80%;
+    right: -100%;
+    top: 0;
+    transition: all 0.5s ease;
+    background:rgb(196, 131, 11);
+}
+input#menuToggle:checked ~ nav .links{
+    right: 0;
+}
 header{
     grid-area: header;
     background-color: black;
@@ -45,15 +61,10 @@ nav{
     padding-top: 25px;
 }
 
-nav div{
-    display:none;
-}
-
 nav a {
     text-decoration: none;
     color:white;
 }
-
 #menu{
     display:none;
 }
@@ -69,10 +80,14 @@ nav a {
 }
 .arte {
     grid-area: arte;
-    background-image: url("/static/imagens/ArtEPsite.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    display: flex;
+
+    display: grid;
+}
+.arte img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center top;
 }
 .girar{
     grid-area: girar;
@@ -117,12 +132,39 @@ footer{
     #menu{
         display: flex;
         margin-right:10vh;
-        width: 25px;
-        height: 25px;
+        width: 50px;
+        height: 30px;
     }
     /* ------- NAV -------- */
     nav a{
         display:none;
+    }
+    nav .links{
+        padding-top: 60px;
+    }
+    nav .links label{
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 30px;
+        height: 30px;
+    }
+    nav .links label i{
+        font-size:30px;
+        color:white;
+    }
+    nav .links a{
+        display: block;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        color: #fff;
+        border-bottom: 1px solid #ccc;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font-family: sans-serif;
     }
     #redes{
         display: flex;
@@ -140,7 +182,22 @@ footer{
 
 }
 
-@media(min-width:300px){
+@media(min-width:768px){
+    .headerOn nav .links{
+        position: static;
+        display: flex;
+        background: #000;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .headerOn nav #redes{
+        display: none;
+    }
+    nav .links label{
+        display: none;
+    }
+}
+@media(min-width:360px){
      /* ----- HEADER ------- */
     #menu{
         height: 3vh;
@@ -150,6 +207,8 @@ footer{
         width: 30%;
         height: 30%;
     }
+    /* ------ SECTION ARTE --------*/
+
 }
 @media(min-width:650px){
     /* ----- HEADER ------- */
@@ -172,6 +231,12 @@ footer{
         width: 25px;
         height: 25px;
         margin-top: -8px;
+    }
+}
+@media(min-width:748px){
+    /* ----- HEADER -----*/
+    .AboBranco{
+        margin-top:-10px;
     }
 }
 @media(min-width:780px){
@@ -206,4 +271,5 @@ footer{
     nav a{
         margin-top:-7px;
     }
+}
 }
