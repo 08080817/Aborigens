@@ -8,12 +8,13 @@ body{
                          'nav nav'
                          'arte arte'
                          'girar girar'
-                         "banda aside"
-                         "banda aside "
-                         "agenda agenda "
-                         "galeria galeria "
+                         'paralax paralax'
+                         'banda aside'
+                         'banda aside'
+                         'agenda agenda'
+                         'galeria galeria'
                          'footer footer';
-    grid-auto-rows: 10vh 8vh 112vh 100vh 50vh 50vh 90vh 90vh 20vh;
+    grid-auto-rows: 10vh 8vh 112vh 100vh 100vh 50vh 50vh 90vh 90vh 40vh;
 }
 
 header{
@@ -52,6 +53,13 @@ nav div{
 nav a {
     text-decoration: none;
     color:white;
+    font-family: TribalAboFont;
+    font-size: 15px;
+}
+
+nav > a:hover {
+    cursor: pointer;
+    color: orange;
 }
 
 #menu{
@@ -67,6 +75,7 @@ nav a {
     height: 10%;
     margin: 2vh;
 }
+
 .arte {
     grid-area: arte;
     background-image: url("/static/imagens/ArtEPsite.jpg");
@@ -74,43 +83,151 @@ nav a {
     background-size: 100%;
     display: flex;
 }
-.girar{
-    grid-area: girar;
-    background-color:pink;
-}
 
-.banda {
-    grid-area: banda;
+.girar {
+    grid-area: girar;
     background-color: black;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+h1 {
+    font-family: TribalAboFont;
+    font-size: 55px;
+    color: white;
+}
+
+.girar > img {
+    width: 45vw;
+    height: 45vh;
+ }
+button {
+    background-color: orange;
+    width: 20vw;
+    height: 10vh;
+    margin: 30px;
+    border: none;
+    font-family: TribalAboFont;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.paralax {
+    grid-area: paralax;
+    background-color: aqua;
+    background-image: url("/static/imagens/AborigensMG.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banda {
+    grid-area: banda;
+    background-color:black;
+    display: flex;
+    align-items: center;
 }
 
 .banda > img {
-    width: 50vw;
-    height: 50vh;
+    width: 80%;
+    height: auto;
+    margin-left: 20px;
 }
 
 aside {
     grid-area: aside;
-    background-color: blue;
+    background-color:black;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-family: Arial;
+    font-size: 15px;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    white-space: normal;
+
 }
 
 .agenda {
     grid-area: agenda;
-    background-color: brown;
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agenda > h1 {
+    font-family: TribalAboFont;
+    font-size: 50px;
+    color: black;
+    margin-top: 40px;
+
+}
+
+.agenda > h2 {
+    font-family: TribalAboFont;
+    font-size: 50px;
+    color: black;
 }
 
 .galeria {
     grid-area: galeria;
-    background-color: aqua;
+    background-color: #3C054F;
+    display: flex;
+}
+.galeria > div {
+    display: flex;
+    justify-content: center;
+    flex-direction: initial;
+    align-items: center;
+}
+
+.galeria > div > img {
+   width: 45%;
+   height: auto;
+   margin: 5px;
 }
 
 footer{
     grid-area:footer;
-    background-color:orange;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.rodape > a {
+    font-family: Arial;
+    font-size: 18px;
+    color: orange;
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 18px;
+    color: orange;
+    justify-content: center;
+    align-self: flex-end;
+    justify-self: center;
+}
 
 @media(max-width:768px){
     /* ----- HEADER ------- */
@@ -206,4 +323,10 @@ footer{
     nav a{
         margin-top:-7px;
     }
+}
+}
+
+@font-face  {
+    font-family: TribalAboFont;
+    src: url(TribalAboFont.otf);
 }
