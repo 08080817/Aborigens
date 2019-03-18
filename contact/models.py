@@ -6,12 +6,13 @@ class Contato(models.Model):
     nome = models.CharField(max_length=26)
     sobrenome = models.CharField(max_length=50)
     email = models.EmailField() #Volta pra view
-    telefone = models.IntegerField() #e o (55) 11 - ? NO PLACEHOLDER
-    celular = models.IntegerField() #e o (55) 11 - ? NO PLACEHOLDER
-    site = models.URLField()
+    telefone = models.PositiveIntegerField(11) #e o (55) 11 - ? NO PLACEHOLDER
+    celular = models.PositiveIntegerField(11) #e o (55) 11 - ? NO PLACEHOLDER
+    message = models.TextField(max_length=120)
+    # site = models.URLField()
 
-    # def __str__(self):
-    #      return self.nome, self.sobrenome
+    def __str__(self):
+         return f'{self.nome} {self.sobrenome}'
 
 class Mensagem(models.Model):
     data = models.DateTimeField(default=timezone.now)

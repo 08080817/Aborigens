@@ -60,7 +60,7 @@
     </nav> 
     <!-------- HEADER GERAL TERMINAR AQUI  ------->
     <div class="container">
-        <form action="">
+        <!-- <form action="">
             <span class="campo">
                 Nome: 
                 <input type="text" name="nome" >
@@ -88,6 +88,11 @@
                 <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
             </span>
             <input type="submit" value="ENVIAR">
+        </form> -->
+        <form action="." method="POST">
+            {% csrf_token %}
+            {{ form.as_p}}
+            <button>Enviar</button>
         </form>
     </div>
 </body>
