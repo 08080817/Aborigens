@@ -8,12 +8,13 @@ body{
                          'nav nav'
                          'arte arte'
                          'girar girar'
+                         "paralax paralax"
                          "banda aside"
                          "banda aside "
                          "agenda agenda "
                          "galeria galeria "
                          'footer footer';
-    grid-auto-rows: 10vh 8vh auto 100vh 50vh 50vh 90vh 90vh 20vh;
+    grid-auto-rows: 10vh 8vh auto 100vh 100vh 50vh 50vh 90vh 90vh 20vh;
 }
 input#menuToggle{
     display: none;
@@ -92,6 +93,19 @@ nav a {
 .girar{
     grid-area: girar;
     background-color:pink;
+}
+
+.paralax {
+    grid-area: paralax;
+    background-color: aqua;
+    background-image: url("/static/imagens/AborigensMG.JPG");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
 }
 
 .banda {
