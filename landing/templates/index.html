@@ -8,38 +8,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link defer rel="stylesheet" href="{% static 'CSS/style.css' %}">
     <link rel="shortcut icon" href="{% static 'imagens/flag.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
     <title>Aborigens</title>
 </head>
-<body>
+<body class="headerOn">
     <div id="estruturaGrid">
+        <input type="checkbox" name="menu" id="menuToggle">
         <header>
             <div>
                 <div class="bloco"></div>
                 <img class="AboBranco" src="{% static 'imagens/AboDefaut.png' %}" alt="" >
-                <img src="{% static 'imagens/menu.png' %}" alt="" id="menu">
+                <label for="menuToggle">
+                    <span>
+                        <img src="{% static 'imagens/menu.png' %}" alt="" id="menu">
+                    </span>
+                </label>
                 <div class="redes">
-                <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
-                <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
-                <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
-                <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
+                <a href=" https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src="{% static 'imagens/youtubeBranco.png' %} " alt=""> </a>
+                <a href="https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src=" {% static 'imagens/deezerBranco.png' %} " alt=""></a>
+                <a href="https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src="{% static 'imagens/instagramBranco.png' %} " alt=""> </a>
+                <a href=" https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src="{% static 'imagens/facebookBranco.png' %} " alt=""> </a>
+    
+                
                 </div>
             </div>
         </header>
         <nav>
-            <a href="#">INICIO</a>
-            <a href="#">BANDA</a>
-            <a href="#">AGENDA</a>
-            <a href="#">GALERIA</a>
-            <a href="#">CONTATO PARA SHOW</a>
+            <div class="links">
+                <label for="menuToggle">
+                    <span>
+                        <i class="fas fa-times"></i>
+                    </span>
+                </label>
+                <a href="#">INICIO</a>
+                <a href="#">BANDA</a>
+                <a href="#">AGENDA</a>
+                <a href="">GALERIA</a>
+                <a href="{% url 'contact' %}">CONTATO PARA SHOW</a>
+            </div>
 
             <div id="redes">
-             <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
-             <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
-             <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
-             <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
+                <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
+                <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
+                <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
+                <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
             </div>
         </nav>
         <section class="arte">
+<<<<<<< HEAD
            <!-- Arte do Ep no css -->
         </section>
         <section class="girar"> 
@@ -49,7 +67,14 @@
         </section>
         <section class= "paralax">
             <!-- Efeito Paralax -->
+=======
+            <img src="{% static 'imagens/ArtEPsite.jpg' %}" alt="Banner">
         </section>
+        <section class="girar"> 
+        
+>>>>>>> 2e048302e5de0ef4fe9a3941b55895860eccbdba
+        </section>
+        <section class="paralax"></section>
         <section class = "banda"> 
             <img src= "{% static 'imagens/AboDefaut.png' %}" alt="">
         </section>
