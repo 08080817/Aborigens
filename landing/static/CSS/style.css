@@ -4,6 +4,7 @@ body{
 
 #estruturaGrid {
     display: grid;
+<<<<<<< HEAD
     grid-template-areas: "header header"
                          "nav nav"
                         "arte arte"
@@ -15,6 +16,28 @@ body{
                         "galeria galeria "
                         "footer footer";
     grid-auto-rows: 10vh 8vh 112vh 100vh 100vh 50vh 50vh 90vh 90vh 20vh;
+=======
+    grid-template-areas: 'header header'
+                         'nav nav'
+                         'arte arte'
+                         'girar girar'
+<<<<<<< HEAD
+                         'paralax paralax'
+                         'banda aside'
+                         'banda aside'
+                         'agenda agenda'
+                         'galeria galeria'
+                         'footer footer';
+    grid-auto-rows: 10vh 8vh 112vh 100vh 100vh 50vh 50vh 90vh 90vh 40vh;
+=======
+                         "paralax paralax"
+                         "banda aside"
+                         "banda aside "
+                         "agenda agenda "
+                         "galeria galeria "
+                         'footer footer';
+    grid-auto-rows: 10vh 8vh auto 100vh 100vh 50vh 50vh 90vh 90vh 20vh;
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 input#menuToggle{
     display: none;
@@ -32,6 +55,7 @@ input#menuToggle{
 }
 input#menuToggle:checked ~ nav .links{
     right: 0;
+>>>>>>> 2e048302e5de0ef4fe9a3941b55895860eccbdba
 }
 header{
     grid-area: header;
@@ -67,6 +91,14 @@ nav a {
     color:white;
     font-family: TribalAboFont;
     font-size: 15px;
+<<<<<<< HEAD
+=======
+}
+
+nav > a:hover {
+    cursor: pointer;
+    color: orange;
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 
 nav > a:hover {
@@ -87,6 +119,7 @@ nav > a:hover {
     height: 10%;
     margin: 2vh;
 }
+
 .arte {
     grid-area: arte;
     background-image: url(/static/imagens/ArtEPsite.jpg);
@@ -111,10 +144,34 @@ h1 {
     color: white;
 }
 
+<<<<<<< HEAD
 .girar > img {
     width: 45vw;
     height: 45vh;
 }
+=======
+.girar {
+    grid-area: girar;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+}
+
+h1 {
+    font-family: TribalAboFont;
+    font-size: 55px;
+    color: white;
+}
+
+<<<<<<< HEAD
+.girar > img {
+    width: 45vw;
+    height: 45vh;
+ }
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 button {
     background-color: orange;
     width: 20vw;
@@ -126,6 +183,8 @@ button {
     cursor: pointer;
 }
 
+=======
+>>>>>>> 2e048302e5de0ef4fe9a3941b55895860eccbdba
 .paralax {
     grid-area: paralax;
     background-image: url("/static/imagens/AborigensMG.JPG");
@@ -133,8 +192,17 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+}
+=======
+    
+
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 
+>>>>>>> 2e048302e5de0ef4fe9a3941b55895860eccbdba
 .banda {
     grid-area: banda;
     background-color:black;
@@ -164,7 +232,11 @@ p {
     margin-left: 20px;
     margin-right: 20px;
     white-space: normal;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 
 .agenda {
@@ -181,7 +253,11 @@ p {
     font-size: 50px;
     color: black;
     margin-top: 40px;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 
 .agenda > h2 {
@@ -203,9 +279,15 @@ p {
 }
 
 .galeria > div > img {
+<<<<<<< HEAD
     width: 45%;
     height: auto;
     margin: 5px;
+=======
+   width: 45%;
+   height: auto;
+   margin: 5px;
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 
 footer{
@@ -214,6 +296,7 @@ footer{
     display: flex;
     flex-direction: column;
     justify-content: center;
+<<<<<<< HEAD
 }
 
 footer img{
@@ -243,8 +326,32 @@ h3 {
     justify-content: center;
     align-self: flex-end;
     justify-self: center;
+=======
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
 
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.rodape > a {
+    font-family: Arial;
+    font-size: 18px;
+    color: orange;
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: Arial;
+    font-size: 18px;
+    color: orange;
+    justify-content: center;
+    align-self: flex-end;
+    justify-self: center;
+}
 
 @media(max-width:768px){
     /* ----- HEADER ------- */
@@ -398,8 +505,19 @@ h3 {
         margin-top:-7px;
     }
 }
+<<<<<<< HEAD
 
 @font-face  {
     font-family: TribalAboFont;
     src: url(TribalAboFont.otf); 
+=======
+<<<<<<< HEAD
+}
+
+@font-face  {
+    font-family: TribalAboFont;
+    src: url(TribalAboFont.otf);
+=======
+>>>>>>> 2e048302e5de0ef4fe9a3941b55895860eccbdba
+>>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
 }
