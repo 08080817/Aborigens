@@ -1,5 +1,6 @@
 body{
    margin:0;
+   overflow-x: hidden;
 }
 
 #estruturaGrid {
@@ -123,7 +124,8 @@ aside {
 
 footer{
     grid-area:footer;
-    background-color:orange;
+    background-color: black;
+    color:white;
 }
 
 

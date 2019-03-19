@@ -14,7 +14,7 @@
     <title>Contato Para Show</title>
 </head>
 
-<body style="background-color: blueviolet" class="headerOn">
+<body  class="headerOn">
     <!-------- HEADER GERAL COPIAR AQUI  ------->
     <input type="checkbox" name="menu" id="menuToggle">
     <header>
@@ -56,36 +56,26 @@
         </div>
     </nav> 
     <!-------- HEADER GERAL TERMINAR AQUI  ------->
-    <div class="container">
-        <form action="">
-            <span class="campo">
-                Nome: 
-                <input type="text" name="nome" >
-            </span>
-            <span class="campo">
-                Sobrenome: 
-                <input type="text" >
-            </span>
-            <span class="campo">
-                E-mail: 
-                <input type="text" >
-            </span>
-            <span class="campoDuplo">
-                <div>
-                    Telefone: 
-                    <input type="number" >
-                </div>
-                <div>
-                    Celular: 
-                    <input type="number" >
-                </div>
-            </span>
-            <span class="campo">
-                Escreva uma mensagem :)
-                <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
-            </span>
-            <input type="submit" value="ENVIAR">
-        </form>
-    </div>
+
+        <p class="contatoTitle">Entre em contato conosco!</p>
+        <div class="containerLine">
+            <div class="line"></div>
+        </div>
+        <div id="container">
+            <form>
+                <input type="text" name="nome" id="" placeholder="  Nome">
+                <input type="text" name="sobrenome" id="" placeholder="  Sobrenome"><br>
+                <input type="email" name="email" id="" placeholder="  E-mail">
+                <input type="number" name="tel" id="" placeholder="  Telefone"><br>
+                <input type="number" name="cel" id="" placeholder="  Celular"><br>
+                <textarea name="mensagem" id="" cols="25" rows="10" placeholder=" Escreva-nos uma mensagem:"></textarea><br>
+                <button type="submit" value="ENVIAR">ENVIAR</button>
+            </form>
+        </div>
+
+        <footer>
+            FOOTER
+        </footer>
+
 </body>
 </html>
