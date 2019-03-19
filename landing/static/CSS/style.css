@@ -1,9 +1,11 @@
-body{
-   margin:0;
-   overflow-x: hidden;
+body, html{
+    scroll-behavior: smooth;    
+    margin:0;
+    overflow-x: hidden;
 }
 
 #estruturaGrid {
+    width: 100%;
     display: grid;
     grid-template-areas: 'header header'
                          'nav nav'
@@ -68,14 +70,10 @@ nav a {
     color:white;
     font-family: TribalAboFont;
     font-size: 15px;
+    transition: all 0.4s ease;
 }
 
-nav > a:hover {
-    cursor: pointer;
-    color: orange;
-}
-
-nav > a:hover {
+nav .links > a:hover {
     cursor: pointer;
     color: orange;
 }
@@ -86,6 +84,23 @@ nav > a:hover {
 
 .redes {
     justify-content: left;
+}
+.redes a{
+    color: #000;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: all 0.4s ease;
+}
+.redes a:hover{
+    background: #414342;
+    color: orange;
 }
 
 .redes > img {
@@ -130,6 +145,9 @@ h1 {
     justify-content: center;
     align-items: center;
     margin: 0%;
+}
+.girar h1{
+    text-align: center;
 }
 
 h1 {
@@ -296,6 +314,9 @@ h3 {
         width: 50px;
         height: 30px;
     }
+    nav{
+        padding: 25px 0;
+    }
     /* ------- NAV -------- */
     nav a{
         display:none;
@@ -327,12 +348,13 @@ h3 {
         box-sizing: border-box;
         font-family: sans-serif;
     }
-    #redes{
+    nav .redes{
         display: flex;
         justify-content: space-around;
+        align-items: center;    
         width: 60vw;
     }
-    #redes img{
+    .redes img{
         width: 20px;
         height: 20px;
         margin-top: -5px;
@@ -351,7 +373,7 @@ h3 {
         justify-content: space-between;
         align-items: center;
     }
-    .headerOn nav #redes{
+    .headerOn nav .redes{
         display: none;
     }
     nav .links label{
@@ -388,7 +410,7 @@ h3 {
             margin-top:-5px;
         }
         /* ----- NAV -----*/
-        #redes img{
+        .redes img{
             width: 25px;
             height: 25px;
             margin-top: -8px;

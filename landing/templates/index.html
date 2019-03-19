@@ -9,8 +9,8 @@
     <link defer rel="stylesheet" href="{% static 'CSS/style.css' %}">
     <link rel="shortcut icon" href="{% static 'imagens/flag.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    
     <title>Aborigens</title>
 </head>
 <body class="headerOn">
@@ -26,10 +26,10 @@
                     </span>
                 </label>
                 <div class="redes">
-                <a href=" https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src="{% static 'imagens/youtubeBranco.png' %} " alt=""> </a>
-                <a href="https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src=" {% static 'imagens/deezerBranco.png' %} " alt=""></a>
-                <a href="https://www.instagram.com/aborigensoficial/ "> <img src="{% static 'imagens/instagramBranco.png' %} " alt=""> </a>
-                <a href="https://www.facebook.com/aborigens"> <img src="{% static 'imagens/facebookBranco.png' %} " alt=""> </a>
+                    <a href=" https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <i class="fab fa-youtube"></i> </a>
+                    <!-- <a href="https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src=" {% static 'imagens/deezerBranco.png' %} " alt=""></a> -->
+                    <a href="https://www.instagram.com/aborigensoficial/ "> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/aborigens"> <i class="fab fa-facebook-f"></i> </a>
                 </div>
             </div>
         </header>
@@ -46,22 +46,16 @@
                 <a href="#link-galeria">GALERIA</a>
                 <a href="{% url 'contact' %}">CONTATO PARA SHOW</a>
             </div>
-
-            <div id="redes">
-                <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
-                <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
-                <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
-                <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
-            </div>
+            
+                <div class="redes">
+                    <a href=" https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <i class="fab fa-youtube"></i> </a>
+                    <!-- <a href="https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src=" {% static 'imagens/deezerBranco.png' %} " alt=""></a> -->
+                    <a href="https://www.instagram.com/aborigensoficial/ "> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/aborigens"> <i class="fab fa-facebook-f"></i> </a>
+                </div>
         </nav>
         <section class="arte">
-<<<<<<< HEAD
             <!-- arte do ep  -->
-        </section>
-        <section class="girar"> 
-                <h1>Aruanda Piscicodélica</h1>
-                <img src="{% static 'imagens/ArteEPquadrada.jpeg'%}" alt="">
-                <button>Streaming</button>
         </section>
         <section class="inicio" id="link-inicio"></section>
         <section class="paralax">
@@ -72,25 +66,17 @@
         </section>
         <aside> 
             <p> ABÔRIGENS é uma banda brasileira que nasceu no ano de 2017 com a proposta de disseminar os valores da cultura Hip Hop através da mistura do Dub, Rap, Reggae e Rock dando vida a um complexo musical. </p>   
-
+            
             <p> Apesar de a música ser o fio condutor que une Daniel Kafuzo (guita/voz), EvellynOzz (vocal), Well Drums (bateria), Macarrão (baixo) e Bola(dj) a formação da banda se deve ao resultado do trabalho da Produtora Cultural Social A Banca onde os integrantes atuam realizando ações de impacto social nas periferias do Brasil utilizando a música como ferramenta de transformação. Atualmente o “ABÔ” está fazendo shows em festivais e casas de show em um circuito dentro do estado de São Paulo.</p>
-=======
-<<<<<<< HEAD
-           <!-- Arte do Ep no css -->
-        </section>
+            <!-- Arte do Ep no css -->
+        </aside>
         <section class="girar"> 
-            <h1>Aruanda Piscicodélica</h1>
+            <h1>Aruanda Psicodelica</h1>
             <img src="{% static 'imagens/ArteEPquadrada.jpeg'%}" alt="">
             <button>Streaming</button>
         </section>
         <section class= "paralax">
             <!-- Efeito Paralax -->
-=======
-            <img src="{% static 'imagens/ArtEPsite.jpg' %}" alt="Banner">
-        </section>
-        <section class="girar"> 
-        
->>>>>>> 2e048302e5de0ef4fe9a3941b55895860eccbdba
         </section>
         <section class="paralax"></section>
         <section class = "banda"> 
@@ -98,20 +84,21 @@
         </section>
         <aside> 
             <p> ABÔRIGENS é uma banda brasileira que nasceu no ano de 2017 com a proposta de disseminar os valores da cultura Hip Hop através da mistura do Dub, Rap, Reggae e Rock dando vida a um complexo musical. </p>   
-
+            
             <p> Apesar de a música ser o fio condutor que une Daniel Kafuzo (guita/voz), EvellynOzz (vocal), Well Drums (bateria), Macarrão (baixo) e Bola(dj) a formação da banda se deve ao resultado do trabalho da Produtora Cultural Social A Banca onde os integrantes atuam realizando ações de impacto social nas periferias do Brasil utilizando a música como ferramenta de transformação. Atualmente o “ABÔ” está fazendo shows em festivais e casas de show em um circuito dentro do estado de São Paulo.</p>
-
-            <p> O conceito “ABÔRIGENS” vem da junção da palavra Yorubá “ABÔ”que significa proteção, com a palavra origens “Proteção das Raízes/Origens pondo a música como manifestação de nossa existência, de nosso estilo de vida e de nossa cultura. </p>
+            
+            <p> O conceito “ABÔRIGENS” vem da junção da palavra Yorubá “ABÔ”
+                que significa proteção, com a palavra origens “Proteção das Raízes/Origens pondo a música como manifestação de nossa existência, de nosso estilo de vida e de nossa cultura. </p>
         </aside>
         <section class= "agenda"> 
             <h1> Aguarde agenda da turne </h1>
             <h2> ... </h2>
         </section>
         <section class="galeria">
-         <div>
+            <div>
                 <img src="{% static 'imagens/AborigensRincon.JPG' %}" alt="">
                 <img src="{% static 'imagens/AboFestivalPercurso.JPG' %}" alt="">
-         </div>
+            </div>
         </section>
         <footer>
             <div class="rodape">
@@ -120,40 +107,30 @@
                 <a href="#">GALERIA</a>
                 <a href="#">CONTATO PARA SHOW</a>
             </div>
-                <h3> contatoaborigens@gmail.com</h3> 
-            </div>
+            <h3> contatoaborigens@gmail.com</h3> 
         </footer>
-    </div>
->>>>>>> fd5cc1b0ada55bb758e01e669620a9362106fbee
+</div>
 
-            <p> O conceito “ABÔRIGENS” vem da junção da palavra Yorubá “ABÔ”que significa proteção, com a palavra origens “Proteção das Raízes/Origens pondo a música como manifestação de nossa existência, de nosso estilo de vida e de nossa cultura. </p>
-        </aside>
-        <section class= "agenda"> 
-                <h1> Aguarde agenda da turne </h1>
-                <h2> ... </h2>
-            </section>
-            <section class="galeria">
-             <div>
-                    <img src="{% static 'imagens/AborigensRincon.JPG' %}" alt="">
-                    <img src="{% static 'imagens/AboFestivalPercurso.JPG' %}" alt="">
-             </div>
-            </section>
-        <footer> 
-                <!-- <div class="rodape">
-                        <a href="#">BANDA</a>
-                        <a href="#">AGENDA</a>
-                        <a href="#">GALERIA</a>
-                        <a href="#">CONTATO PARA SHOW</a>
-                    </div>
-                        <h3> contatoaborigens@gmail.com</h3> 
-                    </div> -->
-            <div>
-                <img src="{% static 'imagens/icone-cacto.png' %}" alt="">
-                <a href="#topo-header" class="btn-voltar">
-                    Voltar ao topo
-                </a>
-            </div>
-        </footer>
+<p> O conceito “ABÔRIGENS” vem da junção da palavra Yorubá “ABÔ”que significa proteção, com a palavra origens “Proteção das Raízes/Origens pondo a música como manifestação de nossa existência, de nosso estilo de vida e de nossa cultura. </p>
+</aside>
+<section class= "agenda"> 
+    <h1> Aguarde agenda da turne </h1>
+    <h2> ... </h2>
+</section>
+<section class="galeria">
+    <div>
+        <img src="{% static 'imagens/AborigensRincon.JPG' %}" alt="">
+        <img src="{% static 'imagens/AboFestivalPercurso.JPG' %}" alt="">
+    </div>
+</section>
+    <footer> 
+        <div>
+            <img src="{% static 'imagens/icone-cacto.png' %}" alt="">
+            <a href="#topo-header" class="btn-voltar">
+                Voltar ao topo
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
 
