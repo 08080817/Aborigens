@@ -4,14 +4,14 @@ from contact.forms import CriarContatoForm
 # Create your views here.
 def contact(request):
 
-    formulario = CriarContatoForm(request.POST or None)
+    # formulario = CriarContatoForm(request.POST or None)
 
-    if formulario.is_valid():
-        formulario.save()
-        formulario = CriarContatoForm()
+    # if formulario.is_valid():
+    #     formulario.save()
+    #     formulario = CriarContatoForm()
 
-    context = {
-        'form': formulario
-    }
+    # context = {
+    #     'form': formulario
+    # }
 
-    return render(request, 'contact.html', context)
+    return render(request, 'contact.html')

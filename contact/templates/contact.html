@@ -8,8 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{% static 'CSS/style.css' %}">
     <link rel="stylesheet" href="{% static 'CSS/style1.css' %}">
+    <link rel="shortcut icon" href="{% static 'imagens/flag.png' %}" type="image/x-icon">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>Contato Para Show</title>
 </head>
@@ -26,14 +27,15 @@
             <label for="menuToggle">
                 <span>
                     <img src="{% static 'imagens/menu.png' %}" alt="" id="menu">
-                    <img src="{% static 'imagens/menu.png'%}" alt="" id="menu">
                 </span>
             </label>
             <div class="redes">
-                <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
-                <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
-                <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
-                <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
+                <div class="redes">
+                    <a href=" https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA " target="blank"> <i class="fab fa-youtube"></i> </a>
+                    <!-- <a href="https://www.youtube.com/channel/UCKN04SgMHtdpP92pmjp7BWA "> <img src=" {% static 'imagens/deezerBranco.png' %} " alt=""></a> -->
+                    <a href="https://www.instagram.com/aborigensoficial/ " target="blank"> <i class="fab fa-instagram"></i> </a>
+                    <a href="https://www.facebook.com/aborigens" target="blank"> <i class="fab fa-facebook-f"></i> </a>
+                </div>
             </div>
         </div>
     </header>
@@ -45,17 +47,10 @@
                 </span>
             </label>
             <a href="#">INICIO</a>
-            <a href="#">BANDA</a>
-            <a href="#">AGENDA</a>
-            <a href="">GALERIA</a>
+            <a href="#banda">BANDA</a>
+            <a href="#agenda">AGENDA</a>
+            <a href="#galeria">GALERIA</a>
             <a href="{% url 'contact' %}">CONTATO PARA SHOW</a>
-        </div>
-    
-        <div id="redes">
-            <img src="{% static 'imagens/deezerBranco.png' %}" alt="">
-            <img src="{% static 'imagens/youtubeBranco.png' %}" alt="">
-            <img src="{% static 'imagens/instagramBranco.png' %}" alt="">
-            <img src="{% static 'imagens/facebookBranco.png' %}" alt="">
         </div>
     </nav> 
     <!-------- HEADER GERAL TERMINAR AQUI  ------->
@@ -77,7 +72,7 @@
         </div>
 
         <footer>
-            FOOTER
+          
         </footer>
 
 </body>

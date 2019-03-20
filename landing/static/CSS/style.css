@@ -2,6 +2,10 @@ body, html{
     scroll-behavior: smooth;    
     margin:0;
     overflow-x: hidden;
+
+}
+body{
+    background-color: #000;
 }
 
 #estruturaGrid {
@@ -205,7 +209,7 @@ p {
     white-space: normal;
 }
 
-.agenda {
+#agenda {
     grid-area: agenda;
     background-color: orange;
     display: flex;
@@ -214,14 +218,14 @@ p {
     align-items: center;
 }
 
-.agenda > h1 {
+#agenda > h1 {
     font-family: TribalAboFont;
     font-size: 50px;
     color: black;
     margin-top: 40px;
 }
 
-.agenda > h2 {
+#agenda > h2 {
     font-family: TribalAboFont;
     font-size: 50px;
     color: black;
@@ -244,6 +248,10 @@ p {
    height: auto;
    margin: 5px;
 }
+#gal{
+    display: flex;
+    margin-left: 15%;
+}
 
 footer{
     grid-area:footer;
@@ -254,24 +262,43 @@ footer{
     justify-content: center;
 }
 
-footer img{
-    width: 50px;
-    height: 50px;
-    padding-top: 10px;
-    margin-left: 30px;
-}
+
 .rodape {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
+    margin-top:-20%;
 }
 
 .rodape > a {
     font-family: Arial;
+    font-size: 15px;
+    color: orange;
+    margin-left: 20px;
+}
+
+h3 {
+    font-family: Arial;
     font-size: 18px;
     color: orange;
     margin-left: 20px;
+}
+
+.rodape {
+    display: inline;
+    margin-top: 10%;
+    margin-left: 25%;
+    word-spacing: 10px;
+
+}
+
+.rodape > a {
+    font-family: TribalAboFont;
+    font-size: 18px;
+    color: orange;
+    margin-left: 20px;
+    text-decoration:none;
 }
 
 h3 {
@@ -282,30 +309,36 @@ h3 {
     align-self: flex-end;
     justify-self: center;
 }
-
-.rodape {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
+#aboPreto{
+    width: 200px;
+    height: 100px;
 }
-
-.rodape > a {
-    font-family: Arial;
-    font-size: 18px;
+@media(min-width:750px){
+        #gal{
+        display: flex;
+        margin-left: 13%;
+    }
+    iframe{
+        margin-top:-20px;
+    }
+    .rodape > a {
+    font-family: TribalAboFont;
+    font-size: 15px;
     color: orange;
-    margin-left: 20px;
+    margin-left: 0px;
+}
+#agenda > h1 {
+    font-family: TribalAboFont;
+    font-size: 30px;
+    color: black;
+    margin-top: 40px;
+}
+.girar > img {
+    width: 55vh;
+    height: 45vh;
 }
 
-h3 {
-    font-family: Arial;
-    font-size: 18px;
-    color: orange;
-    justify-content: center;
-    align-self: flex-end;
-    justify-self: center;
 }
-
 @media(max-width:768px){
     /* ----- HEADER ------- */
     #menu{
@@ -379,6 +412,33 @@ h3 {
     nav .links label{
         display: none;
     }
+    .galeria{
+        display: flex;
+        align-items: center;
+    }
+    #gal{
+        display: flex;
+        margin-left: 13%;
+    }
+    iframe{
+        margin-top:-20px;
+    }
+    .rodape > a {
+    font-family: TribalAboFont;
+    font-size: 15px;
+    color: orange;
+    margin-left: 0px;
+}
+#agenda > h1 {
+    font-family: TribalAboFont;
+    font-size: 30px;
+    color: black;
+    margin-top: 40px;
+}
+.girar > img {
+    width: 55vh;
+    height: 45vh;
+}
 }
 @media(min-width:360px){
     /* ----- HEADER ------- */
